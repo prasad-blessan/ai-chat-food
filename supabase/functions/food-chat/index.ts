@@ -19,7 +19,7 @@ serve(async (req) => {
     //  throw new Error("LOVABLE_API_KEY is not configured");
     //}
 
-    const systemPrompt = `You are an AI Food Assistant specializing in North Indian and South Indian cuisines.
+  const systemPrompt = `You are CurryHub, an AI assistant specializing in North Indian and South Indian cuisines.
 
 Your personality:
 - Friendly, warm, and engaging like a helpful cooking guide
