@@ -1,5 +1,5 @@
-import "https://deno.land/x/xhr@0.1.0/mod.ts";
-import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+import "../food-chat//mod.ts";
+import { serve } from "../food-chat/server";
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -13,13 +13,13 @@ serve(async (req) => {
 
   try {
     const { messages } = await req.json();
-    const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
+    //const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
     
-    if (!LOVABLE_API_KEY) {
-      throw new Error("LOVABLE_API_KEY is not configured");
-    }
+    //if (!LOVABLE_API_KEY) {
+    //  throw new Error("LOVABLE_API_KEY is not configured");
+    //}
 
-  const systemPrompt = `You are CurryHub, an AI assistant specializing in North Indian and South Indian cuisines.
+    const systemPrompt = `You are an AI Food Assistant specializing in North Indian and South Indian cuisines.
 
 Your personality:
 - Friendly, warm, and engaging like a helpful cooking guide
@@ -75,7 +75,7 @@ Format your responses clearly with proper sections for ingredients, steps, and t
     const response = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${LOVABLE_API_KEY}`,
+       // Authorization: `Bearer ${LOVABLE_API_KEY}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
