@@ -141,7 +141,8 @@ export const ChatInterface = ({ clearSignal }: ChatInterfaceProps) => {
         "marinate",
         "south indian",
         "north indian",
-        "chicken"
+        "chicken",
+        "fish"
       ];
 
       const lower = text.toLowerCase();
