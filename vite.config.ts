@@ -8,6 +8,7 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    base: '/ai-chat-food/',
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
