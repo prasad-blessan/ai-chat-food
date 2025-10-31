@@ -10,7 +10,7 @@ export const CuisineSelector = ({ onSelect }: CuisineSelectorProps) => {
     <div className="flex flex-col items-center justify-center min-h-[60vh] gap-8 p-6">
       <div className="text-center space-y-3">
         <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-          AI Food Assistant
+          CurryHub
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl">
           Explore the rich flavors of Indian cuisine. Choose your culinary journey!

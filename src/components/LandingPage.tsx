@@ -8,7 +8,7 @@ export const LandingPage = () => {
         <div className="text-center space-y-6 mb-16">
           <div className="text-6xl mb-4">🍛🍲</div>
           <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            AI Food Assistant
+            CurryHub
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Your personal guide to authentic Indian cuisine. Explore recipes, learn cooking techniques, and discover the rich flavors of India.

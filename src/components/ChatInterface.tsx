@@ -26,7 +26,7 @@ export const ChatInterface = ({ clearSignal }: ChatInterfaceProps) => {
   const welcomeMessage: Message = {
     role: "assistant",
     content:
-      "Welcome to AI Food Assistant! 🍛🍲\n\nI can help you explore the delicious world of Indian cuisine - both North and South Indian!\n\n**North Indian**: Butter Chicken, Paneer Tikka, Dal Makhani, Chole Bhature, Biryani, and more!\n\n**South Indian**: Masala Dosa, Idli, Sambar, Uttapam, Vada, and more!\n\nWhat would you like to know about? You can ask for:\n- A specific dish recipe\n- List of popular dishes from either region\n- Cooking tips and techniques\n- Differences between regional variations\n- Ingredient substitutions",
+      "Welcome to CurryHub! 🍛🍲\n\nI can help you explore the delicious world of Indian cuisine - both North and South Indian!\n\n**North Indian**: Butter Chicken, Paneer Tikka, Dal Makhani, Chole Bhature, Biryani, and more!\n\n**South Indian**: Masala Dosa, Idli, Sambar, Uttapam, Vada, and more!\n\nWhat would you like to know about? You can ask for:\n- A specific dish recipe\n- List of popular dishes from either region\n- Cooking tips and techniques\n- Differences between regional variations\n- Ingredient substitutions",
   };
 
   // Load persisted messages from localStorage on mount
@@ -152,7 +152,7 @@ export const ChatInterface = ({ clearSignal }: ChatInterfaceProps) => {
           <div className="flex items-center gap-3">
             <div className="text-3xl">🍛🍲</div>
             <div>
-              <h2 className="font-bold text-lg">AI Food Assistant</h2>
+              <h2 className="font-bold text-lg">CurryHub</h2>
               <p className="text-sm text-muted-foreground">Ask me anything about Indian recipes and cooking!</p>
             </div>
           </div>
